@@ -1,0 +1,39 @@
+Configuration:
+  # Fields Mapping
+  AmountField: 'Amount'
+  DateField: 'Started Date'
+  MerchantField: 'Description'
+  TransactionTypeField: 'Type'
+  # Computation
+  Currency: 'EUR'
+  # Filter certain statements.
+  IgnoredStatements: ['MONITO', 'INET']
+  # Include certain transaction types based on TransactionTypeField.
+  TransactionTypeDebit: ['Debit', 'Direct Debit', 'Bill Payment', 'CARD_PAYMENT']
+Expenses:
+  Dining:
+    Coffee:
+      - 'STARBUCKS'
+    Restaurant:
+      - 'Uber Eats'
+  Entertainment:
+    Visits:
+      - 'Museum of Modern Art'
+  Subscriptions:
+    Sport:
+      - 'Gym'
+    Entertainment:
+      - 'Microsoft'
+      - 'Google'
+      - 'YouTube'
+    Mobile:
+      - 'Vodafone'
+    Transport:
+      - 'Bus'
+  Shopping:
+    Garden:
+      - 'Woodies'
+    Amazon:
+      - 'Amazon'
+  Donations:
+    - 'Share the Meal'
